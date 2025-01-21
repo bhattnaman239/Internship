@@ -1,9 +1,6 @@
 #Asynchronous Programming
 print("\nASYNCHRONOUS PROGRAMMING\n")
 import asyncio
-
-import asyncio
-
 async def say_hello():
     print("Hello")
     await asyncio.sleep(1)
