@@ -40,7 +40,6 @@ list2 = [4, 5, 6]
 combined = itertools.chain(list1, list2)
 print(list(combined))
 
-import itertools
 import operator
 
 #Accumulate

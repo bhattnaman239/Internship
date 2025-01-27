@@ -43,7 +43,6 @@ print("Response Code:",response.status_code)
 print(response.json())      
 print(type(response.json()))
 
-
 print("\nPOST2 REQUEST\n")
 url2 = "https://jsonplaceholder.typicode.com/posts/101"
 # data = {"title": "New Post", "body": "This is a new post.", "userId": 1}
