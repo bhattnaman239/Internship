@@ -39,5 +39,17 @@ ist = utc + timedelta(hours=5, minutes=30)
 print(f"Current IST Time: {ist}")
 
 
+#Stings to Date
+print("\nSTRINGS TO DATE:")
+date_str = "2025-01-22 12:00:00"
+parsed_date = datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S")
+print(f"Parsed Date: {parsed_date}")
 
+
+#Date to Strings
+print("\nDATE TO STRINGS:")
+date = datetime.now()
+formatted_date = date.strftime("%Y-%m-%d %H:%M:%S")
+print(f"Formatted Date: {formatted_date}")
+print(type(formatted_date))
 
