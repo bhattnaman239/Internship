@@ -74,3 +74,34 @@ print(user.model_dump_json())
 print(type(user.model_dump_json()))
 print(user.model_dump())
 print(type(user.model_dump()))
+
+
+#Model Inheritance
+print("\nMODEL INHERITANCE\n")
+from pydantic import BaseModel
+class User(BaseModel):
+    name: str
+    age: int
+    city: str
+    email: str
+
+class Admin(User):
+    role: str
+    
+admin = Admin(name="Alice", age=25, city="New York", email="12.in", role="Admin")
+print(admin)
+
+#Model Config and Aliasing
+print("\nMODEL CONFIG AND ALIASING\n")
+from pydantic import BaseModel
+class User(BaseModel):
+    name: str =  Field(..., alias="user_id")
+    age: int = Field(..., alias="user_age")
+    city: str
+    email: str
+
+    class Config:
+        populate_by_name = True
+
+user = User(name="Alice",age=25, city="New York", email="12.in")
+print(user)
