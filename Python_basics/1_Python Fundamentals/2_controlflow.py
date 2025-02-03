@@ -33,10 +33,10 @@ for i in my_list:
 # Iterators and Iterables
 print("\n(iii)ITERATORS AND ITERABLES")
 list = [1, 2, 3]
-list = iter(list)
-print(next(list))
-print(next(list))
-print(next(list))
+list1 = iter(list)
+print(next(list1))
+print(next(list1))
+print(next(list1))
 
 
 # Break statement

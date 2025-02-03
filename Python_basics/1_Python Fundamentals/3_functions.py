@@ -27,7 +27,8 @@ global_var = 9
 def local_scope_demo():
     local_var = "I am local"
     print(local_var)
-    print(global_var+2)
+    global_var =  1
+    print(global_var)
 local_scope_demo()
 print(global_var)
 # print(local_var)  # throws error
